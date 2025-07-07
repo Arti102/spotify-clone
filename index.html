@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="nav">
+      <div class="nav-option active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </div>
+      <div class="nav-option">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Search</span>
+      </div>
+    </div>
+
+    <div class="library">
+      <div class="library-header">
+        <div class="lib-title">
+          <i class="fa-solid fa-bars"></i>
+          <span>Your Library</span>
+        </div>
+        <div class="lib-icons">
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <div class="lib-box">
+        <div class="box">
+          <p class="box-p1">Create your first playlist</p>
+          <p class="box-p2">It's easy, we'll help you</p>
+          <button class="badge">Create playlist</button>
+        </div>
+      </div>
+
+      <div class="lib-box">
+        <div class="box">
+          <p class="box-p1">Let's find some podcasts to follow</p>
+          <p class="box-p2">We'll keep you updated on new episodes</p>
+          <button class="badge">Browse podcasts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="sticky-nav">
+      <div class="sticky-nav-icons">
+        <i class="fa-solid fa-less-than" style="margin-right: 15px;"></i>
+        <i class="fa-solid fa-greater-than"></i>
+      </div>
+      <div class="sticky-nav-options">
+        <button class="badge nav-item hide">Explore Premium</button>
+        <button class="badge nav-item dark-badge">
+          <i class="fa-solid fa-download"></i> Install App
+        </button>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+
+    <h2>Recently Played</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img class="card-img" src="./assests/card1img.jpeg">
+            <p class="card-title">Top 50 Global</p>
+            <p class="card-info">Your daily updates of the most played tracks...</p>
+        </div>
+    </div> 
+    
+    <h2>Trending Now near you</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img class="card-img" src="./assests/card4img.jpeg">
+            <p class="card-title">Trending Song 1</p>
+            <p class="card-info">Hot tracks trending now...</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assests/card5img.jpeg">
+            <p class="card-title">Trending Song 2</p>
+            <p class="card-info">Popular near you...</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assests/card6img.jpeg">
+            <p class="card-title">Trending Song 3</p>
+            <p class="card-info">Everyone's listening to...</p>
+        </div>
+    </div>
+
+    <h2>Featured Charts</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img class="card-img" src="./assests/card6img.jpeg">
+            <p class="card-title">Global Top 50</p>
+            <p class="card-info">Biggest songs worldwide...</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assests/card3img.jpeg">
+            <p class="card-title">India Top 50</p>
+            <p class="card-info">Top hits of India...</p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assests/card5img.jpeg">
+            <p class="card-title">US Top 50</p>
+            <p class="card-info">Top US tracks...</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="line">
+
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="music-player">
+    <div class="album"></div>
+    <div class="player">
+        <div class="player-controls">
+            <img class="player-control-icon" src="./assests/player_icon1.png">
+            <img class="player-control-icon" src="./assests/player_icon2.png">
+            <img class="player-control-icon" src="./assests/player_icon3.png" style="opacity: 1; height: 2rem;">
+            <img class="player-control-icon" src="./assests/player_icon4.png">
+            <img class="player-control-icon" src="./assests/player_icon5.png">
+        </div>
+
+        <div class="play-bar">
+            <span class="curr-time">00:00</span>
+            <input type="range" min="0" max="100" class="progress-bar" step="1">
+            <span class="total-time">40:00</span>
+        </div>
+    </div>
+    <div class="controls"></div>
+</div>
+
+</body>
+</html>
